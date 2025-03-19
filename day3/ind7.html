@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    <h2><center>TELANGANA STATE ROAD TRANSPORT CORPORATION</center></h2>
+    <h3><center>GENERAL BUS PASS APPLICATION</center></h3>
+    <form>
+        <!-- Applicant Details -->
+        <fieldset>
+            <legend>Applicant Details</legend>
+            <label for="name">Name (Maximum characters: 20):</label>
+            <input type="text" id="name" name="name" maxlength="20" required>
+            <label for="fatherName">Father's / Guardian's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+            <br>
+            <br>
+            <br>
+            <label for="dob">Date of Birth (dd/mm/yyyy):</label>
+            <input type="date" id="dob" name="dob" required>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <br>
+            <br>
+            <br>
+            <label for="aadhaar">Aadhaar No:</label>
+            <input type="text" id="aadhaar" name="aadhaar">
+            <br>
+            <br>
+            <br>
+            <label for="whatsapp">WhatsApp No:</label>
+            <input type="tel" id="whatsapp" name="whatsapp">
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo">
+            <label for="email">E-mail ID:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <br>
+            <br>
+        </fieldset>
+
+        <!-- Residential Address Details -->
+        <fieldset>
+            <legend>Residential Address Details</legend>
+            <label for="address">Applicant's Address (Maximum characters: 20):</label>
+            <input type="text" id="address" name="address" maxlength="20" required><br><br>
+
+            <label for="district">District:</label>
+            <select id="district" name="district">
+                <option value="HYDERABAD">HYDERABAD</option>
+                <!-- Add more options as needed -->
+            </select>
+            <br>
+            <br>
+            <label for="mandal">Mandal:</label>
+            <input type="text" id="mandal" name="mandal" value="HYDERABAD">
+            <br>
+            <br>
+            <label for="village">Village:</label>
+            <input type="text" id="village" name="village" value="HYDERABAD">
+            <br>
+            <br>
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" required><br><br>
+        </fieldset>
+
+        <!-- Pass Type Details -->
+        <fieldset>
+            <legend>Pass Type Details</legend>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" value="Hyderabad"><br><br>
+
+            <label for="passType">Pass Type:</label>
+            <select id="passType" name="passType">
+                <option value="">--Select--</option>
+                <!-- Add more options as needed -->
+            </select><br><br>
+        </fieldset>
+
+        <!-- Mode of Payment & Pass Collection -->
+        <fieldset>
+            <legend>Mode of Payment & Pass Collection</legend>
+            <label for="paymentMode">Payment Mode:</label>
+            <select id="paymentMode" name="paymentMode">
+                <option value="">Select Payment Mode</option>
+                <!-- Add more options as needed -->
+            </select><br><br>
+
+            <label for="passDelivery">Pass Delivery Mode:</label>
+            <select id="passDelivery" name="passDelivery">
+                <option value="">Select Pass Delivery Mode</option>
+                <!-- Add more options as needed -->
+            </select><br><br>
+
+            <label for="center">Center at which you want to Collect Pass:</label>
+            <select id="center" name="center">
+                <option value="">--Select--</option>
+                <!-- Add more options as needed -->
+            </select><br><br>
+        </fieldset>
+
+        <!-- CAPTCHA -->
+        <label for="captcha">Enter CAPTCHA:</label>
+        <input type="text" id="captcha" name="captcha" required>
+        <img src="#" alt="CAPTCHA Image"><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
